@@ -18,7 +18,27 @@ hugo server -D
 
 The site will include draft posts and automatically reload as you make changes to the source code. You can view it at [http://localhost:1313](http://localhost:1313).
 
+### Add content
+
+```
+hugo new article/forgiving-my-dad.md
+```
+
+Start a new `article` type post. Look at the [theme documentation](https://github.com/Lednerb/bilberry-hugo-theme#post-types) for a list of the custom post types. Look in `themes/bilberry-hugo-theme/exampleSite/content` for examples.
+
+### Customize colors
+
+1. Install [`yarn`](https://yarnpkg.com/en/docs/install#alternatives-tab)
+2. `cd themes/bilberry-hugo-theme/src`
+3. Run `yarn install` to install all necessary dependencies.
+4. Modify the `scss/_variables.scss` file to customize your colors. If you want to change the header's color just edit the `$base-color` variable.
+6. After finishing your changes, run `yarn run production` to produce your customized stylesheets.
+
 ## Ops
+
+### Update search index
+
+Serve the site locally and navigate to [http://localhost:1313/index.json](http://localhost:1313/index.json), copy the entire contents of that page, navigate to the [algolia hosted index](https://www.algolia.com/apps/H7SROC0BWQ/explorer/browse/1), clear the index, and then choose to add records manually and paste the copied records into the window.
 
 ### Publish
 
@@ -35,3 +55,8 @@ Checks that all source code changes are committed to `git`, deletes the `public`
 ```
 
 Pushes the commit with the new build to the `gh-pages` branch on the remote and then deploys it to [Firebase Hosting](https://console.firebase.google.com/u/0/project/lettersfromfutureme/hosting/main). It will be visible at [https://lettersfromfuture.me](https://lettersfromfuture.me) shortly.
+https://analytics.google.com/analytics/web/#embed/report-home/a41382391w165611605p166124897/
+
+### Analytics
+
+[Google Analytics](https://analytics.google.com/analytics/web/#embed/report-home/a41382391w165611605p166124897/) are enabled for the site.
