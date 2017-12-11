@@ -8,10 +8,10 @@ enableRobotsTXT = true
 DefaultContentLanguage = "en"
 
 # Enable / Disable Google Analytics statistics for your site
-googleAnalytics = ""
+googleAnalytics = "UA-41382391-2"
 
 # Enable / Disable comments on the articles via Disqus.
-disqusShortname = "bilberry-hugo-theme"
+disqusShortname = "lettersfromfutureme"
 
 [params]
   # Favicon for the browser's favorites and tabs
@@ -36,7 +36,7 @@ disqusShortname = "bilberry-hugo-theme"
 
   # Header configuration
     # your subtitle if you want to use any
-    subtitle = "We'll get there some day."
+    subtitle = ""
 
     # if you want to use gravatar for the header image
     gravatarEMail = ""
