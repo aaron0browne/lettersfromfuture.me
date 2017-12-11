@@ -1,0 +1,69 @@
+title = "Letters From Future Me"
+baseURL = "https://aaron0browne.github.io/lettersfromfuture.me"
+theme = "bilberry-hugo-theme"
+
+enableRobotsTXT = true
+
+# Change to your content language. Supported values: en, de, es, fr, ru
+DefaultContentLanguage = "en"
+
+# Enable / Disable Google Analytics statistics for your site
+googleAnalytics = ""
+
+# Enable / Disable comments on the articles via Disqus.
+disqusShortname = "bilberry-hugo-theme"
+
+[params]
+  # Favicon for the browser's favorites and tabs
+  favicon = "" # set a favicon icon
+
+  # Description and meta data for the search engines
+  author = "Aaron Browne"
+  description = "Letters From Future Me"
+  keywords = "radical,progressive,creative writing,blog,aaron browne,gender,sex,family,relationships,code"
+
+  # How many articles should be displayed at once?
+  paginate = 7
+
+  # Enable / Disable MathJax
+  enable_mathjax    = false
+
+  # Enable / Disable algolia search
+  algolia_search    = true
+  algolia_appId     = "H7SROC0BWQ"
+  algolia_apiKey    = "40b193e1812c311659801a162a460189"
+  algolia_indexName = "1"
+
+  # Header configuration
+    # your subtitle if you want to use any
+    subtitle = "We'll get there some day."
+
+    # if you want to use gravatar for the header image
+    gravatarEMail = ""
+
+    # set an path to the image file you want to use | overwrites gravatar
+    customImage = ""
+
+    # always display the top navigation (with pages and search) on non-mobile screens
+    permanentTopNav = false
+
+  # social media profile urls for the footer links
+  facebook   = "https://www.facebook.com/aaron0browne"
+  twitter    = "https://twitter.com/aaron0browne"
+  googleplus = ""
+  pinterest  = ""
+  instagram  = "https://www.instagram.com/aaron0browne"
+  tumblr     = ""
+  youtube    = ""
+  vimeo      = ""
+  github     = "https://github.com/aaron0browne"
+
+# don't change anything here
+[taxonomies]
+  author   = "author"
+  tag      = "tags"
+  category = "categories"
+
+[outputs]
+  home = [ "HTML", "JSON" ]
+  page = [ "HTML" ]
