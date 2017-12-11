@@ -1,5 +1,5 @@
 title = "Letters From Future Me"
-baseURL = "https://aaron0browne.github.io/lettersfromfuture.me"
+baseURL = "https://lettersfromfuture.me"
 theme = "bilberry-hugo-theme"
 
 enableRobotsTXT = true
